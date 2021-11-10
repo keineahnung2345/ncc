@@ -14,10 +14,12 @@ provides libclang python bindings. The clang version should match the libclang.s
 
 * clang
 * yaml
+* cppstyle
 
 ```python
 pip install clang
 pip install pyyaml
+pip install cppstyle
 ```
 
 ### Windows
@@ -94,6 +96,13 @@ should begin with m_, and a function name should begin with uppercase alphabet
     examples/tmp/test.hpp:19:9: "_aaa" does not match "^[a-z].*$" associated with StructMemberVariable
     Total number of errors = 8
 ```
+
+### Specify clang lib path, remove #include, write log into a text file
+For example:
+```sh
+python ncc.py --style geotechnical.style --path <your_project_path> --clang-lib D:\LLVM\bin\libclang.dll --config ".cppstyle" -r -ri --exclude "<your_project_path>/<folder>\*" > mylog.txt 2>&1
+```
+Note: clanglib is installed on Windows along with LLVM, check [LLVM installation](https://github.com/keineahnung2345/cpp-code-snippets/tree/master/clang-format#on-windows) for more information.
 
 ## License
 
