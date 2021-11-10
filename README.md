@@ -102,6 +102,7 @@ For example:
 ```sh
 python ncc.py --style geotechnical.style --path <your_project_path> --clang-lib D:\LLVM\bin\libclang.dll --config ".cppstyle" -r -ri --exclude "<your_project_path>/<folder>\*" > mylog.txt 2>&1
 ```
+Note: clanglib is installed on Windows along with LLVM, check [LLVM installation](https://github.com/keineahnung2345/cpp-code-snippets/tree/master/clang-format#on-windows) for more information.
 
 ## License
 
