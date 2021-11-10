@@ -1,0 +1,15 @@
+naming:
+    classes: ^.*$
+    variables: ^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$
+    members:
+        private: ^([a-z0-9]+)(_[a-z0-9]+)*_$
+        protected: ^([a-z0-9]+)(_[a-z0-9]+)*_$
+        public: ^([a-z0-9]+)(_[a-z0-9]+)*$
+    functions: ^.*$
+    methods: ^.*$
+order:
+    access_specifier_required: True
+    access_specifier:
+        - "public"
+        - "protected"
+        - "private"

@@ -36,6 +36,11 @@ from clang.cindex import StorageClass
 from clang.cindex import TypeKind
 from clang.cindex import Config
 
+# gfelbing/cppstyle
+from shutil import copy
+from functools import partial
+from cppstyle import check, utils
+from cppstyle.model import parser
 
 # Clang cursor kind to ncc Defined cursor map
 default_rules_db = {}
@@ -56,12 +61,15 @@ class Rule(object):
 
     def evaluate(self, node, scope=None):
         if not self.pattern.match(node.spelling):
-            fmt = '{}:{}:{}: "{}" does not match "{}" associated with {}\n'
-            msg = fmt.format(node.location.file.name, node.location.line, node.location.column,
-                             node.displayname, self.pattern_str, self.name)
-            sys.stderr.write(msg)
-            return False
-        return True
+            fmt = '{fname}:{line}:{column}: "{node}" does not match "{pattern}" associated with {name}'
+            msg = partial(fmt.format, 
+                          #fname=node.location.file.name, # current fname is temporary
+                          column=node.location.column,
+                          node=node.displayname,
+                          pattern=self.pattern_str,
+                          name=self.name)
+            return (msg, node.location.line)
+        return None
 
 
 class ScopePrefixRule(object):
@@ -182,13 +190,14 @@ class VariableNameRule(object):
 
         pattern = re.compile(pattern_str)
         if not pattern.match(node.spelling):
-            fmt = '{}:{}:{}: "{}" does not have the pattern {} associated with Variable name\n'
-            msg = fmt.format(node.location.file.name, node.location.line, node.location.column,
-                             node.displayname, pattern_str)
-            sys.stderr.write(msg)
-            return False
-
-        return True
+            fmt = '{fname}:{line}:{column}: "{node}" does not have the pattern {pattern} associated with Variable name'
+            msg = partial(fmt.format, 
+                          # fname=node.location.file.name, # current fname is temporary
+                          column=node.location.column,
+                          node=node.displayname,
+                          pattern=self.pattern_str)
+            return (msg, node.location.line)
+        return None
 
 
 # All supported rules
@@ -374,7 +383,7 @@ class Options:
             "(but important) task. This makes it ideal for projects that want "
             "to enforce a coding standard.")
 
-        self.parser.add_argument('--recurse', action='store_true', dest="recurse",
+        self.parser.add_argument('-r', '--recurse', action='store_true', dest="recurse",
                                  help="Read all files under each directory, recursively")
 
         self.parser.add_argument('--style', dest="style_file",
@@ -410,6 +419,12 @@ class Options:
 
         self.parser.add_argument('--path', dest='path', nargs="+",
                                  help="Path of file or directory")
+
+        # added for gfelbing/cppstyle
+        self.parser.add_argument("--config", default=".cppstyle")
+
+        self.parser.add_argument("-ri", "--remove-includes", dest="remove_includes", 
+                                 action="store_true")
 
     def parse_cmd_line(self):
         self.args = self.parser.parse_args()
@@ -518,7 +533,7 @@ class Validator(object):
         Recursively visit all nodes of the AST and match against the patter provided by
         the user. Return the total number of errors caught in the file
         """
-        errors = 0
+        errors = []
         for child in node.get_children():
             if self.is_local(child, self.filename):
 
@@ -527,15 +542,15 @@ class Validator(object):
                 parent = self.node_stack.peek()
                 if (parent and parent == CursorKind.TYPEDEF_DECL and
                         child.kind == CursorKind.STRUCT_DECL):
-                    return 0
+                    return [None]
 
-                errors += self.evaluate(child)
+                errors.append(self.evaluate(child))
 
                 # Members struct, class, and unions must be treated differently.
                 # So parent ast node information is pushed in to the stack.
                 # Once all its children are validated pop it out of the stack
                 self.node_stack.push(child.kind)
-                errors += self.check(child)
+                errors.extend(self.check(child))
                 self.node_stack.pop()
 
         return errors
@@ -546,13 +561,12 @@ class Validator(object):
         matching fails
         """
         if not self.rule_db.is_rule_enabled(node.kind):
-            return 0
+            return None
 
         rule_name = self.rule_db.get_rule_names(node.kind)
         rule = self.rule_db.get_rule(rule_name)
-        if rule.evaluate(node, self.node_stack.peek()) is False:
-            return 1
-        return 0
+        msg = rule.evaluate(node, self.node_stack.peek())
+        return msg
 
     def is_local(self, node, filename):
         """ Returns True is node belongs to the file being validated and not an include file """
@@ -578,6 +592,58 @@ def do_validate(options, filename):
 
     return True
 
+def call_checker(paths, op, checker="ncc"):
+    error = 0
+
+    if checker == "cppstyle":
+        config = utils.config(op.args.config)
+
+    for path in paths:
+        deleted_row_cnt = 0
+        newpath = path
+
+        # copy .h file to .cpp
+        if (checker == "cppstyle" and path.endswith(".h")) or op.args.remove_includes:
+            newpath = path +".cpp"
+            copy(path, newpath)
+
+        # remove "#include" to speed up the checking
+        if op.args.remove_includes:
+            with open(newpath, 'r', encoding="utf-8-sig", errors='ignore') as f:
+                lines = f.readlines()
+            with open(newpath, 'w', errors='ignore') as f:
+                newlines = list(filter(lambda l: not l.startswith("#include"), lines))
+                f.writelines(newlines)
+                deleted_row_cnt = len(lines) - len(newlines)
+
+        if checker == "ncc":
+            v = Validator(rules_db, newpath, op)
+            msgs = v.validate()
+            msgs = list(filter(lambda msg: msg is not None, msgs))
+            error += len(msgs)
+            for msg, l in msgs:
+                print(msg(fname=path, line=l+deleted_row_cnt))
+        elif checker == "cppstyle":
+            success = True
+            root = parser.parse(newpath)
+            issues = check.check(newpath, root, config)
+            error += len(issues)
+
+            print("In file '{}':".format(path))
+            if len(issues) > 0:
+                for issue in issues:
+                    print("    [Line {}, Col {}]: {}".format(
+                        issue.position.row + deleted_row_cnt, 
+                        issue.position.col, issue.message))
+                success = False
+            if success:
+                print("    No issues found.")
+
+        # remove created .cpp
+        if (checker == "cppstyle" and path.endswith(".h")) or op.args.remove_includes:
+            os.remove(newpath)
+    if error > 0:
+        print("Total number of errors = {}".format(error))
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG, format='%(asctime)s %(levelname)s %(message)s',
@@ -596,20 +662,18 @@ if __name__ == "__main__":
     """ Creating the rules database """
     rules_db = RulesDb(op._style_file)
 
-    """ Check the source code against the configured rules """
-    errors = 0
+    """ Find valid files """
+    valid_paths = []
     for path in op.args.path:
         if os.path.isfile(path):
             if do_validate(op, path):
-                v = Validator(rules_db, path, op)
-                errors += v.validate()
+                valid_paths.append(path)
         elif os.path.isdir(path):
             for (root, subdirs, files) in os.walk(path):
                 for filename in files:
                     path = root + '/' + filename
                     if do_validate(op, path):
-                        v = Validator(rules_db, path, op)
-                        errors += v.validate()
+                        valid_paths.append(path)
 
                 if not op.args.recurse:
                     break
@@ -617,6 +681,8 @@ if __name__ == "__main__":
             sys.stderr.write("File '{}' not found!\n".format(path))
             sys.exit(1)
 
-    if errors:
-        print("Total number of errors = {}".format(errors))
-        sys.exit(1)
+    """ Check the source code against the configured rules """
+    print("==============================ncc==============================")
+    call_checker(valid_paths, op, checker="ncc")
+    print("==============================cppstyle==============================")
+    call_checker(valid_paths, op, checker="cppstyle")

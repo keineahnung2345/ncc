@@ -1,0 +1,532 @@
+==============================ncc==============================
+MessageHandler/commands.h:12:12: "Basic_Type" does not match "^([A-Z][a-z0-9]*)+$" associated with EnumName
+MessageHandler/log.cpp:3:13: "pad_or_trunc(int, const int, const bool)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/log.cpp:22:5: "count_substring(const int &, const int &)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/log.cpp:32:8: "find_nth_occurrence(const int &, const int &, int)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/log.cpp:46:13: "trunc_function_name(const int &)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/log.h:18:13: "pad_or_trunc(int, const int, const bool)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/log.h:21:13: "count_substring(const int &, const int &)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/log.h:22:13: "find_nth_occurrence(const int &, const int &, int)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/log.h:24:13: "trunc_function_name(const int &)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/log.h:52:6: "log_debug(int &&)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/log.h:53:6: "log_debug(const int &)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/log.h:54:6: "log_info(int &&)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/log.h:55:6: "log_info(const int &)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/log.h:56:6: "log_warn(int &&)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/log.h:57:6: "log_warn(const int &)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/log.h:58:6: "log_error(int &&)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/log.h:59:6: "log_error(const int &)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/Parameter.h:50:24: "_Scalar" does not match "^[A-Z]$" associated with TemplateTypeParameter
+MessageHandler/Parameter.h:62:24: "_Scalar" does not match "^[A-Z]$" associated with TemplateTypeParameter
+MessageHandler/Parameter.h:86:24: "_Scalar" does not match "^[A-Z]$" associated with TemplateTypeParameter
+MessageHandler/Parameter.h:98:24: "_Scalar" does not match "^[A-Z]$" associated with TemplateTypeParameter
+MessageHandler/Point_Cloud_Type.h:5:7: "Point_Cloud_Type" does not match "^([A-Z][a-z0-9]*)+$" associated with ClassName
+MessageHandler/point_cloud_utils.cpp:7:10: "DownsampleCloud(int &, float)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/point_cloud_utils.h:17:10: "DownsampleCloud(int &, float)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/point_cloud_utils.h:19:23: "ClusterCloud(int &, float, float, float)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/utils.cpp:4:6: "get_time(int &, int &, int &, int &, int &, int &, const bool, const unsigned long long)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/utils.cpp:15:12: "tm" does not match "^([A-Z][a-z0-9]*)+$" associated with StructName
+MessageHandler/utils.cpp:33:13: "get_timestamp()" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/utils.cpp:35:12: "tm" does not match "^([A-Z][a-z0-9]*)+$" associated with StructName
+MessageHandler/utils.cpp:44:14: "s2ws(const int &)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/utils.cpp:56:20: "FileTimeToUnixTime(int)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/utils.cpp:73:20: "get_file_creation_time(const int &)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/utils.cpp:318:16: "in_addr" does not match "^([A-Z][a-z0-9]*)+$" associated with StructName
+MessageHandler/utils.cpp:1006:30: "read_biteline(int, int)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/utils.h:46:35: "Args" does not match "^[A-Z]$" associated with TemplateTypeParameter
+MessageHandler/utils.h:51:47: "Args" does not match "^[A-Z]$" associated with TemplateTypeParameter
+MessageHandler/utils.h:54:47: "Args" does not match "^[A-Z]$" associated with TemplateTypeParameter
+MessageHandler/utils.h:58:20: "TFunc" does not match "^[A-Z]$" associated with TemplateTypeParameter
+MessageHandler/utils.h:64:19: "" does not match "^[A-Z]$" associated with TemplateTypeParameter
+MessageHandler/utils.h:85:35: "Ts" does not match "^[A-Z]$" associated with TemplateTypeParameter
+MessageHandler/utils.h:100:13: "get_timestamp()" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/utils.h:102:14: "s2ws(const int &)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/utils.h:104:20: "FileTimeToUnixTime(int)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/utils.h:106:20: "get_file_creation_time(const int &)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/utils.h:113:32: "Compare" does not match "^[A-Z]$" associated with TemplateTypeParameter
+MessageHandler/utils.h:200:6: "string_split(const int &, const int &, int &)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/utils.h:203:6: "string_split(const int &, const int &, const int)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/utils.h:207:6: "string_join(const int &, int &)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/utils.h:209:6: "replace_all(int &, const int &, const int &)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler/utils.h:392:30: "read_biteline(int, int)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler\source\Connection/ConnectionClient.h:14:12: "CC_State" does not match "^([A-Z][a-z0-9]*)+$" associated with EnumName
+MessageHandler\source\Connection/ConnectionServer.h:15:12: "CS_State" does not match "^([A-Z][a-z0-9]*)+$" associated with EnumName
+MessageHandler\source\RobotCalibration/RobotCalibration.h:43:9: "scan" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\RobotCalibration/RobotCalibration.h:44:9: "robot" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\RobotCalibration/RobotCalibration.h:45:9: "all" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\RobotCalibration/RobotCalibration.h:46:9: "tcp" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\RobotCalibration/RobotCalibration.h:67:9: "NotFinished" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\RobotCalibration/RobotCalibration.h:68:9: "Finished" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\RobotStation/abb_cplusplus.h:17:11: "Abbovi" does not match "^[a-z]+$" associated with Namespace
+MessageHandler\source\RobotStation/abb_cplusplus.h:20:5: "MoveL" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\RobotStation/abb_cplusplus.h:21:5: "MoveJ" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\RobotStation/abb_cplusplus.h:22:5: "MoveAbsJ" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\RobotStation/abb_cplusplus.h:23:5: "GetCurrentPose" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\RobotStation/pose.cpp:46:15: "operator<<(int &, const int &)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler\source\RobotStation/pose.h:17:11: "Abbovi" does not match "^[a-z]+$" associated with Namespace
+MessageHandler\source\RobotStation/pose.h:66:26: "operator<<(int &, const Abbovi::Pose &)" does not match "^[a-z]+([A-Z][a-z]*)*$" associated with FunctionName
+MessageHandler\source\RobotStation/pose_type.h:4:11: "Abbovi" does not match "^[a-z]+$" associated with Namespace
+MessageHandler\source\RobotStation/pose_type.h:10:5: "EULER_012" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\RobotStation/pose_type.h:11:5: "EULER_021" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\RobotStation/pose_type.h:12:5: "EULER_102" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\RobotStation/pose_type.h:13:5: "EULER_120" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\RobotStation/pose_type.h:14:5: "EULER_201" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\RobotStation/pose_type.h:15:5: "EULER_210" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\RobotStation/RobotStation.h:63:9: "NotReady" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\RobotStation/RobotStation.h:64:9: "Single_Ready" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\RobotStation/RobotStation.h:65:9: "Single_Busy" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\RobotStation/RobotStation.h:66:9: "Path_Ready" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\RobotStation/RobotStation.h:67:9: "Path_Busy" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\RobotStation/RobotStation.h:68:9: "Step_Ready" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\RobotStation/RobotStation.h:69:9: "Step_Busy" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\RobotStation/robot_ik.h:18:11: "Abbovi" does not match "^[a-z]+$" associated with Namespace
+MessageHandler\source\RobotStation/robot_state.h:4:11: "Abbovi" does not match "^[a-z]+$" associated with Namespace
+MessageHandler\source\RobotStation/robot_state.h:7:5: "Disconnect" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\RobotStation/robot_state.h:8:5: "Running" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\RobotStation/robot_state.h:9:5: "Stopped" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\RobotStation/robot_state.h:10:5: "Unknown" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\ScannerStation/ScannerStation.h:41:5: "ReconstructNear" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\ScannerStation/ScannerStation.h:42:5: "ReconstructFar" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+MessageHandler\source\ScannerStation/ScannerStation.h:43:5: "ReconstructAll" does not match "^[A-Z]+(_[A-Z]+)*$" associated with EnumConstantName
+Total number of errors = 106
+==============================cppstyle==============================
+In file 'MessageHandler/commands.cpp':
+    [Line 16, Col 0]: Variable 'i_b_s' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 17, Col 0]: Variable 'i_b_s_s' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 18, Col 0]: Variable 'i_b_vf_s' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 19, Col 0]: Variable 'i_b_vf_s_s' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 20, Col 0]: Variable 'i_b_vf_vf_vs' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 21, Col 0]: Variable 'i_b_vb_vf_vf_vf_vs' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 22, Col 0]: Variable 'i_i_s' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 23, Col 0]: Variable 'i_s' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 24, Col 0]: Variable 'i_s_s' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 25, Col 0]: Variable 'i_s_vf' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 26, Col 0]: Variable 'i_vvf' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 27, Col 0]: Variable 's_i' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 28, Col 0]: Variable 's_i_vvf' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 29, Col 0]: Variable 's_s' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 31, Col 0]: Variable 'b_i_p' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 32, Col 0]: Variable 'b_s' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 33, Col 0]: Variable 'b_s_s' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 34, Col 0]: Variable 'b_vi' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 35, Col 0]: Variable 'b_vf_s' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 36, Col 0]: Variable 'b_vf_vf_s' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 37, Col 0]: Variable 'b_vvf_s' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 39, Col 0]: Variable 'i_vs_vt' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 40, Col 0]: Variable 'vs_vt' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+In file 'MessageHandler/commands.h':
+    [Line 36, Col 0]: Variable 'i_b_s' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 37, Col 0]: Variable 'i_b_s_s' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 38, Col 0]: Variable 'i_b_vf_s' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 39, Col 0]: Variable 'i_b_vf_s_s' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 40, Col 0]: Variable 'i_b_vf_vf_vs' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 41, Col 0]: Variable 'i_i_s' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 42, Col 0]: Variable 'i_s' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 43, Col 0]: Variable 'i_s_s' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 44, Col 0]: Variable 'i_s_vf' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 45, Col 0]: Variable 'i_vvf' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 46, Col 0]: Variable 's_i' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 47, Col 0]: Variable 's_i_vvf' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 48, Col 0]: Variable 's_s' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 50, Col 0]: Variable 'b_i_p' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 51, Col 0]: Variable 'b_s' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 52, Col 0]: Variable 'b_s_s' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 53, Col 0]: Variable 'b_vi' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 54, Col 0]: Variable 'b_vf_s' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 55, Col 0]: Variable 'b_vf_vf_s' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 56, Col 0]: Variable 'b_vvf_s' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 58, Col 0]: Variable 'i_vs_vt' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 59, Col 0]: Variable 'vs_vt' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+In file 'MessageHandler/convenient_defines.h':
+    [Line 13, Col 0]: Variable 'PI' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+In file 'MessageHandler/ErrCode.h':
+    [Line 148, Col 4]: Field 'value' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 149, Col 4]: Field 'customMsg' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+In file 'MessageHandler/log.cpp':
+    [Line 52, Col 0]: Variable 'log_debug_fp' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 53, Col 0]: Variable 'log_info_fp' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 54, Col 0]: Variable 'log_warn_fp' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 55, Col 0]: Variable 'log_error_fp' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+In file 'MessageHandler/log.h':
+    [Line 76, Col 4]: Field 'ss_' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 77, Col 4]: Field 'level_' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+In file 'MessageHandler/Parameter.cpp':
+    [Line 125, Col 4]: Variable 'LOOSE_OFFSET' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 126, Col 4]: Variable 'SOLE_THICK' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 127, Col 4]: Variable 'USE_LOWER_CONTOUR' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 128, Col 4]: Variable 'CONTOUR_Z_LOWER' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 129, Col 4]: Variable 'FINAL_Z_OFFSET' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 130, Col 4]: Variable 'BITELINE_MLS_RADIUS' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 131, Col 4]: Variable 'BITELINE_NUM_LEN' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 132, Col 4]: Variable 'BITELINE_NUM_WIDTH' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 133, Col 4]: Variable 'AVERAGE_TRANSFORM' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 134, Col 4]: Variable 'AVERAGE_ZVALUE' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 135, Col 4]: Variable 'BALANCE_INNER_OUTER_SIDEe' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 136, Col 4]: Variable 'YEDGE_LEN' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 137, Col 4]: Variable 'OUTFLIP_ANGLE' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 138, Col 4]: Variable 'OUTFLIP_THICK' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 139, Col 4]: Variable 'FURTHER_MLS' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 179, Col 4]: Variable 'PATH_FOLDER' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+In file 'MessageHandler/Parameter.h':
+    [Line 20, Col 0]: Class 'Parameters' has wrong access specifier order: ['protected', 'public'], should be ['public', 'protected']
+    [Line 22, Col 4]: Field 'DEFAULT_PATH' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 23, Col 4]: Field 'moduleName' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 24, Col 4]: Field 'cfg' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 25, Col 4]: Field 'readonly' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+In file 'MessageHandler/Point_Cloud_Type.h':
+    [Line 43, Col 4]: Field 'value' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+In file 'MessageHandler/point_cloud_utils.cpp':
+    [Line 3, Col 0]: Variable 'NEED_RESCALE' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 4, Col 0]: Variable 'min_value_' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 5, Col 0]: Variable 'max_value_' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 8, Col 4]: Variable 'cloud_downsampled' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+In file 'MessageHandler/point_cloud_utils.h':
+    [Line 24, Col 0]: Variable 'Ptr' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 29, Col 0]: Variable 'FindPlane' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 34, Col 0]: Variable 'ExtractPointsUsingPlane' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+In file 'MessageHandler/utils.cpp':
+    [Line 65, Col 4]: Variable 'UNIX_TIME_START' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 67, Col 4]: Variable 'TICKS_PER_SECOND' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 287, Col 4]: Variable 'SendData' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 288, Col 4]: Variable 'ReplyBuffer' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 289, Col 4]: Variable 'ReplySize' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 318, Col 23]: Variable 'ReplyAddr' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 354, Col 4]: Variable 'message_bytes' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+In file 'MessageHandler/utils.h':
+    No issues found.
+In file 'MessageHandler\source\Connection/ConnectionClient.cpp':
+    No issues found.
+In file 'MessageHandler\source\Connection/ConnectionClient.h':
+    [Line 28, Col 0]: Class 'ConnectionClient' has wrong access specifier order: ['private', 'public', 'private'], should be ['public', 'private']
+    [Line 30, Col 4]: Variable 'LenBufferSz' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 31, Col 4]: Variable 'RcvBufferSz' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 48, Col 4]: Field 'tcpclient' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 52, Col 4]: Field 'status' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 53, Col 4]: Field 'state' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 55, Col 4]: Field 'LenBuffer' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 56, Col 4]: Field 'RcvBuffer' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+In file 'MessageHandler\source\Connection/ConnectionServer.cpp':
+    No issues found.
+In file 'MessageHandler\source\Connection/ConnectionServer.h':
+    [Line 32, Col 0]: Class 'ConnectionServer' has wrong access specifier order: ['private', 'public', 'private'], should be ['public', 'private']
+    [Line 34, Col 4]: Variable 'LenBufferSz' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 35, Col 4]: Variable 'RcvBufferSz' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 49, Col 4]: Field 'tcpserver' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 50, Col 4]: Field 'socket' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 55, Col 4]: Field 'status' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 56, Col 4]: Field 'state' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 57, Col 4]: Field 'LenBuffer' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 58, Col 4]: Field 'RcvBuffer' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+In file 'MessageHandler\source\Connection/ConnectionUtils.cpp':
+    [Line 5, Col 4]: Variable 'message_bytes' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+In file 'MessageHandler\source\Connection/ConnectionUtils.h':
+    [Line 7, Col 0]: Variable 'LogPrinter' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+In file 'MessageHandler\source\MessageHandler/main.cpp':
+    [Line 35, Col 4]: Variable 'connection_server' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 79, Col 4]: Variable 'console_sink' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 83, Col 4]: Variable 'daily_sink' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+In file 'MessageHandler\source\MessageHandler/MessageHandler.cpp':
+    [Line 2197, Col 4]: Variable 'config_path' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 2211, Col 4]: Variable 'config_path' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 2221, Col 4]: Variable 'config_path' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 2241, Col 4]: Variable 'connection_server' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+In file 'MessageHandler\source\MessageHandler/MessageHandler.h':
+    [Line 90, Col 4]: Field 'value' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 95, Col 4]: Field 'threadCount' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 96, Col 4]: Field 'threadPool' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 98, Col 4]: Field 'maxQueueSize' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 135, Col 4]: Field 'threadPool' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 138, Col 4]: Field 'status' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 139, Col 4]: Field 'state' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 140, Col 4]: Field 'permissionTable' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 142, Col 4]: Field 'scanners' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 143, Col 4]: Field 'scannerCalibrations' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 144, Col 4]: Field 'robot' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 145, Col 4]: Field 'robotCalibration' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 147, Col 4]: Field 'connection' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+In file 'MessageHandler\source\RobotCalibration/convenient_defines.h':
+    [Line 13, Col 0]: Variable 'PI' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+In file 'MessageHandler\source\RobotCalibration/main.cpp':
+    [Line 14, Col 4]: Variable 'record_path' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+In file 'MessageHandler\source\RobotCalibration/RobotCalibration.cpp':
+    No issues found.
+In file 'MessageHandler\source\RobotCalibration/RobotCalibration.h':
+    [Line 71, Col 4]: Field 'state' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 72, Col 4]: Field 'cloudCalibrationBlock' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 73, Col 4]: Field 'BlockPath' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 74, Col 4]: Field 'cloudBlock' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 75, Col 4]: Field 'poseScan' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 76, Col 4]: Field 'poseRobot' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 78, Col 4]: Field 'HC2B' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 79, Col 4]: Field 'TCP' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 80, Col 4]: Field 'ScanError' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 81, Col 4]: Field 'RobotError' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 82, Col 4]: Field 'TotalError' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 83, Col 4]: Field 'TCPError' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 85, Col 4]: Field 'param' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 86, Col 4]: Field 'p_normals' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 87, Col 4]: Field 'record' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+In file 'MessageHandler\source\RobotCalibration/RobotCalibrationParameters.cpp':
+    No issues found.
+In file 'MessageHandler\source\RobotCalibration/RobotCalibrationParameters.h':
+    [Line 16, Col 4]: Field 'CalibrationBlockPath' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 17, Col 4]: Field 'pointCalibrationBlock' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 18, Col 4]: Field 'pointBlock' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 20, Col 4]: Field 'ScanErrorThreshold' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 21, Col 4]: Field 'RobotErrorThreshold' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 22, Col 4]: Field 'TotalErrorThreshold' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 23, Col 4]: Field 'TCPErrorThreshold' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 24, Col 4]: Field 'maxCorrespondenceDistance' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 25, Col 4]: Field 'euclideanFitnessEpsilon' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 28, Col 4]: Field 'H_axis' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+In file 'MessageHandler\source\RobotCalibration/RobotCalibrationRecord.cpp':
+    No issues found.
+In file 'MessageHandler\source\RobotCalibration/RobotCalibrationRecord.h':
+    [Line 18, Col 4]: Field 'CalibrationBlockPath' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 19, Col 4]: Field 'BlockPath' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 20, Col 4]: Field 'pointCalibrationBlock' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 21, Col 4]: Field 'pointBlock' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 22, Col 4]: Field 'poseScan' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 23, Col 4]: Field 'poseRobot' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 24, Col 4]: Field 'HC2B' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 25, Col 4]: Field 'TCP' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 26, Col 4]: Field 'ScanError' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 27, Col 4]: Field 'RobotError' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 28, Col 4]: Field 'TotalError' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 29, Col 4]: Field 'TCPError' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 31, Col 4]: Field 'ScanErrorThreshold' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 32, Col 4]: Field 'RobotErrorThreshold' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 33, Col 4]: Field 'TotalErrorThreshold' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 34, Col 4]: Field 'TCPErrorThreshold' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 35, Col 4]: Field 'maxCorrespondenceDistance' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 36, Col 4]: Field 'euclideanFitnessEpsilon' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+In file 'MessageHandler\source\RobotStation/abb_cplusplus.cpp':
+    No issues found.
+In file 'MessageHandler\source\RobotStation/abb_cplusplus.h':
+    [Line 95, Col 4]: Field 'robot_csharp' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+In file 'MessageHandler\source\RobotStation/core_constants.h':
+    No issues found.
+In file 'MessageHandler\source\RobotStation/demoRobot.cpp':
+    [Line 12, Col 4]: Variable 'connect_result' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 24, Col 4]: Variable 'err_single' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 35, Col 4]: Variable 'err_setmode' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 74, Col 4]: Variable 'err_path' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 127, Col 8]: Variable 'current_p' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 129, Col 12]: Variable 'current_rotation' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 130, Col 12]: Variable 'current_translation' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 142, Col 8]: Variable 'current_joint' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+In file 'MessageHandler\source\RobotStation/pose.cpp':
+    No issues found.
+In file 'MessageHandler\source\RobotStation/pose.h':
+    [Line 24, Col 0]: Class 'Pose' should have an access specifier at first.
+In file 'MessageHandler\source\RobotStation/pose_type.h':
+    No issues found.
+In file 'MessageHandler\source\RobotStation/query.cpp':
+    [Line 13, Col 1]: Variable 'arm_file' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 14, Col 1]: Variable 'transform_file' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 15, Col 1]: Variable 'tcp_file' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 16, Col 1]: Variable 'ip_file' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 21, Col 1]: Variable 'connect_result' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 38, Col 2]: Variable 'current_p' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 40, Col 3]: Variable 'current_rotation' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 41, Col 3]: Variable 'current_translation' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 61, Col 2]: Variable 'current_joint' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+In file 'MessageHandler\source\RobotStation/RobotParameters.cpp':
+    No issues found.
+In file 'MessageHandler\source\RobotStation/RobotParameters.h':
+    [Line 22, Col 4]: Field 'homePoint' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 23, Col 4]: Field 'vec_homePoint' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 24, Col 4]: Field 'TCP' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 25, Col 4]: Field 'P_TCP' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 26, Col 4]: Field 'H_C2B' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 27, Col 4]: Field 'workRange' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+In file 'MessageHandler\source\RobotStation/RobotParameters.hpp':
+    [Line 20, Col 4]: Field 'homePoint' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 21, Col 4]: Field 'vec_homePoint' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 22, Col 4]: Field 'TCP' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 23, Col 4]: Field 'P_TCP' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 24, Col 4]: Field 'H_C2B' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 25, Col 4]: Field 'workRange' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 57, Col 2]: Variable 'H_TCP' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+In file 'MessageHandler\source\RobotStation/RobotStation.cpp':
+    No issues found.
+In file 'MessageHandler\source\RobotStation/RobotStation.h':
+    [Line 22, Col 4]: Field 'isConnected' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 23, Col 4]: Field 'lastErr' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 80, Col 4]: Field 'robot' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 81, Col 4]: Field 'state' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 82, Col 4]: Field 'status' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 83, Col 4]: Field 'param' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 84, Col 4]: Field 'step_status' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 85, Col 4]: Field 'model' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+In file 'MessageHandler\source\RobotStation/robot_ik.cpp':
+    No issues found.
+In file 'MessageHandler\source\RobotStation/robot_ik.h':
+    [Line 103, Col 4]: Field 'robot_model' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 105, Col 4]: Field 'left_init_joints_angle' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 106, Col 4]: Field 'right_init_joints_angle' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 109, Col 4]: Field 'take_pic_joints' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 117, Col 4]: Field 'foot' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 119, Col 4]: Field 'use_normal' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 122, Col 4]: Field 'shift_biteline_pose' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 124, Col 4]: Field 'prepare_speed' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 125, Col 4]: Field 'draw_biteline_speed' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 131, Col 4]: Field 'fix_ik_axis4' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 131, Col 4]: Field 'fix_ik_axis5' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+In file 'MessageHandler\source\RobotStation/robot_state.h':
+    No issues found.
+In file 'MessageHandler\source\ScannerCalibration/CalibrationParameters.cpp':
+    No issues found.
+In file 'MessageHandler\source\ScannerCalibration/CalibrationParameters.h':
+    [Line 14, Col 4]: Field 'recordSavePath' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 15, Col 4]: Field 'blockReferencePath' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 17, Col 4]: Field 'hintP' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 18, Col 4]: Field 'cutDistance' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 19, Col 4]: Field 'leafSize' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 20, Col 4]: Field 'rmseFromDownsampled' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 22, Col 4]: Field 'maxCorrespondenceDistance' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 23, Col 4]: Field 'euclideanFitnessEpsilon' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 24, Col 4]: Field 'useReciprocalCorrespondences' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 25, Col 4]: Field 'rmseThreshold' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 27, Col 4]: Field 'diBallDist' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 28, Col 4]: Field 'diBallRoughThreshold' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 29, Col 4]: Field 'diBallBallRad' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 30, Col 4]: Field 'diBallThreshold' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+In file 'MessageHandler\source\ScannerCalibration/CalibrationRecord.cpp':
+    No issues found.
+In file 'MessageHandler\source\ScannerCalibration/CalibrationRecord.h':
+    [Line 20, Col 4]: Field 'lastExportPath' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 21, Col 4]: Field 'ballPath' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 22, Col 4]: Field 'ballLogPath' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 23, Col 4]: Field 'blockReferencePath' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 24, Col 4]: Field 'blockPath' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 26, Col 4]: Field 'ballRotAxis' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 27, Col 4]: Field 'ballSuccess' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 28, Col 4]: Field 'rotAxisXOffset' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 29, Col 4]: Field 'rotAxisYOffset' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 30, Col 4]: Field 'offsetXAxis' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 31, Col 4]: Field 'offsetYAxis' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 32, Col 4]: Field 'maxCorrespondenceDistance' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 33, Col 4]: Field 'euclideanFitnessEpsilon' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 34, Col 4]: Field 'icpMatrix' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 36, Col 4]: Field 'maxErr' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 37, Col 4]: Field 'blockSuccess' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 38, Col 4]: Field 'fitnessScore' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 39, Col 4]: Field 'diBallThreshold' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 40, Col 4]: Field 'diBallRMSE' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 41, Col 4]: Field 'diBallSuccess' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 42, Col 4]: Field 'diBallPath' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 43, Col 4]: Field 'platePath' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 44, Col 4]: Field 'plateCutPath' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 47, Col 4]: Field 'rotAxis' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+In file 'MessageHandler\source\ScannerCalibration/main.cpp':
+    No issues found.
+In file 'MessageHandler\source\ScannerCalibration/ScannerCalibration.cpp':
+    No issues found.
+In file 'MessageHandler\source\ScannerCalibration/ScannerCalibration.h':
+    [Line 28, Col 0]: Class 'ScannerCalibration' has wrong access specifier order: ['private', 'public'], should be ['public', 'private']
+    [Line 30, Col 4]: Field 'state' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 31, Col 4]: Field 'ballPath' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 33, Col 4]: Field 'blockPath' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 34, Col 4]: Field 'platePath' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 34, Col 4]: Field 'plateCutPath' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 35, Col 4]: Field 'caliParam' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 36, Col 4]: Field 'record' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 37, Col 4]: Field 'rotAxis' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 38, Col 4]: Field 'rotAxisXOffset' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 38, Col 4]: Field 'rotAxisYOffset' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 39, Col 4]: Field 'adjustedRotAxis' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 40, Col 4]: Field 'id' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+In file 'MessageHandler\source\ScannerStation/Camera.h':
+    No issues found.
+In file 'MessageHandler\source\ScannerStation/CameraParameters.cpp':
+    No issues found.
+In file 'MessageHandler\source\ScannerStation/CameraParameters.h':
+    [Line 9, Col 0]: Class 'CameraParameters' has wrong access specifier order: ['private', 'public'], should be ['public', 'private']
+    [Line 16, Col 4]: Field 'DeviceScanType' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 17, Col 4]: Field 'ExposureTime_RegionSelector_Region1' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 18, Col 4]: Field 'Height_RegionSelector_Scan3dExtraction1' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 19, Col 4]: Field 'TriggerMode_TriggerSelector_LineStart' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 20, Col 4]: Field 'EncoderMode' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 21, Col 4]: Field 'EncoderOutputMode' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 22, Col 4]: Field 'EncoderDivider' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 23, Col 4]: Field 'LineFormat_LineSelector_EncoderAInput' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 24, Col 4]: Field 'LineFormat_LineSelector_EncoderBInput' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 31, Col 4]: Field 'configFilePath' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 32, Col 4]: Field 'handeyeConfigFilePath' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 33, Col 4]: Field 'cameraSavePath' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 34, Col 4]: Field 'caliFilePath' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 35, Col 4]: Field 'lastScanPath' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 36, Col 4]: Field 'axisFilePath' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 37, Col 4]: Field 'cameraIpAddr' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 38, Col 4]: Field 'bufferName' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+In file 'MessageHandler\source\ScannerStation/main.cpp':
+    No issues found.
+In file 'MessageHandler\source\ScannerStation/Motor.cpp':
+    No issues found.
+In file 'MessageHandler\source\ScannerStation/Motor.h':
+    [Line 44, Col 4]: Field 'portname' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 47, Col 4]: Field 'velocityRel' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 48, Col 4]: Field 'accelerationRel' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+In file 'MessageHandler\source\ScannerStation/MotorParameters.cpp':
+    No issues found.
+In file 'MessageHandler\source\ScannerStation/MotorParameters.h':
+    [Line 6, Col 4]: Field 'encoderPPR' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 7, Col 4]: Field 'velocityRel' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 8, Col 4]: Field 'accelerationRel' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 9, Col 4]: Field 'homeHardStopPath' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 10, Col 4]: Field 'homeToHomePath' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+In file 'MessageHandler\source\ScannerStation/NSK.cpp':
+    [Line 96, Col 0]: Variable 'g_BytesTransferred' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+    [Line 97, Col 0]: Variable 'CALLBACK' does not match '^([a-z0-9]+)([A-Z0-9][a-z0-9]*)*$'
+In file 'MessageHandler\source\ScannerStation/NSK.h':
+    [Line 25, Col 4]: Field 'ReadBuffer' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 26, Col 4]: Field 'DataBuffer' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 27, Col 4]: Field 'pSerialHandle' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 28, Col 4]: Field 'portname_w' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+In file 'MessageHandler\source\ScannerStation/Reconstructor.cpp':
+    No issues found.
+In file 'MessageHandler\source\ScannerStation/Reconstructor.h':
+    [Line 22, Col 4]: Field 'sType' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 25, Col 4]: Field 'sInput' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 26, Col 4]: Field 'sAxisfile' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 29, Col 4]: Field 'pathScan' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 30, Col 4]: Field 'rotAxis' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 32, Col 4]: Field 'sPcdfile0' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 32, Col 4]: Field 'sPcdfile1' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 32, Col 4]: Field 'sPcdfileFinal' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 33, Col 4]: Field 'Ptr' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+In file 'MessageHandler\source\ScannerStation/ScannerStation.cpp':
+    No issues found.
+In file 'MessageHandler\source\ScannerStation/ScannerStation.h':
+    [Line 31, Col 4]: Field 'cameraConnected' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 32, Col 4]: Field 'motorConnected' does not match '^([a-z0-9]+)(_[a-z0-9]+)*$'
+    [Line 46, Col 0]: Class 'ScannerStation' has wrong access specifier order: ['private', 'public'], should be ['public', 'private']
+    [Line 48, Col 4]: Field 'state' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 49, Col 4]: Field 'camera' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 50, Col 4]: Field 'motor' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 51, Col 4]: Field 'rotAxis' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 52, Col 4]: Field 'lastScan' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 53, Col 4]: Field 'cameraParam' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 54, Col 4]: Field 'motorParam' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 55, Col 4]: Field 'status' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 56, Col 4]: Field 'id' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+In file 'MessageHandler\source\ScannerStation/SICKCamera.cpp':
+    No issues found.
+In file 'MessageHandler\source\ScannerStation/SICKCamera.h':
+    [Line 29, Col 4]: Field 'sicklib' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+In file 'MessageHandler\source\ScannerStation/SmartMotorClass5.cpp':
+    No issues found.
+In file 'MessageHandler\source\ScannerStation/SmartMotorClass5.h':
+    [Line 71, Col 4]: Field 'myconstint1' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 72, Col 4]: Field 'motorSize' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 73, Col 4]: Field 'speedReductionRatio' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 74, Col 4]: Field 'defaultVelocity' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 75, Col 4]: Field 'acceleration' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 76, Col 4]: Field 'CommInterface' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 77, Col 4]: Field 'motor' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 78, Col 4]: Field 'motorSize2steps' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 81, Col 4]: Field 'motorSize2velocityMultipliers' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 84, Col 4]: Field 'homeHardStopPath' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+    [Line 85, Col 4]: Field 'homeToHomePath' does not match '^([a-z0-9]+)(_[a-z0-9]+)*_$'
+Total number of errors = 345
