@@ -104,6 +104,57 @@ python ncc.py --style geotechnical.style --path <your_project_path> --clang-lib 
 ```
 Note: clanglib is installed on Windows along with LLVM, check [LLVM installation](https://github.com/keineahnung2345/cpp-code-snippets/tree/master/clang-format#on-windows) for more information.
 
+## Troubleshooting
+### clang/cindex.py UnicodeDecodeError
+
+If you encounter the following error:
+```
+Traceback (most recent call last):
+  File "ncc.py", line 688, in <module>
+    call_checker(valid_paths, op, checker="cppstyle")
+  File "ncc.py", line 628, in call_checker
+    root = parser.parse(newpath)
+  File "D:\anaconda3\lib\site-packages\cppstyle\model\parser.py", line 12, in parse
+    return to_node(source.cursor)
+  File "D:\anaconda3\lib\site-packages\cppstyle\model\parser.py", line 19, in to_node
+    children = get_children(clang_node)
+  File "D:\anaconda3\lib\site-packages\cppstyle\model\parser.py", line 68, in get_children
+    node = to_node(c)
+  File "D:\anaconda3\lib\site-packages\cppstyle\model\parser.py", line 21, in to_node
+    comments = get_comments(clang_node)
+  File "D:\anaconda3\lib\site-packages\cppstyle\model\parser.py", line 81, in get_comments
+    if clang_node.raw_comment:
+  File "D:\anaconda3\lib\site-packages\clang\cindex.py", line 1798, in raw_comment
+    return conf.lib.clang_Cursor_getRawCommentText(self)
+  File "D:\anaconda3\lib\site-packages\clang\cindex.py", line 229, in from_result
+    return conf.lib.clang_getCString(res)
+  File "D:\anaconda3\lib\site-packages\clang\cindex.py", line 104, in to_python_string
+    return x.value
+  File "D:\anaconda3\lib\site-packages\clang\cindex.py", line 89, in value
+    return super(c_char_p, self).value.decode("utf8")
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xef in position 71: invalid continuation byte
+```
+
+Open `D:\anaconda3\Lib\site-packages\clang\cindex.py`, revise:
+
+```python
+ @property
+ def value(self):
+     if super(c_char_p, self).value is None:
+         return None
+     return super(c_char_p, self).value.decode("utf8")
+```
+
+to:
+
+```python
+ @property
+ def value(self):
+     if super(c_char_p, self).value is None:
+         return None
+     return super(c_char_p, self).value.decode("utf8", "ignore")
+```
+
 ## License
 
 Copyright © 2018 Nithin Nellikunnu
